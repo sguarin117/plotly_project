@@ -1,2 +1,2 @@
 # plotly_project
-Poryecto del Spint 7
+Proyecto del Sprint 7
