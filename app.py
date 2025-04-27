@@ -24,8 +24,6 @@ if scatterplot_button:  # al hacer clic en el botón
     st.write(
         'Creación de un gráfico de dispersion para el conjunto de datos de anuncios de venta de coches')
 
-    car_data = pd.read_csv('vehicles_us.csv')  # leer los datos
-
     # crear un gráfico de dispersión
     fig = px.scatter(car_data, x="odometer", y="price")
     fig.show()  # crear gráfico de dispersión
