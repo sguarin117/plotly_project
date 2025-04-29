@@ -22,9 +22,9 @@ if hist_button:  # al hacer clic en el botón
 if scatterplot_button:  # al hacer clic en el botón
     # escribir un mensaje
     st.write(
-        'Creación de un gráfico de dispersion para el conjunto de datos de anuncios de venta de coches')
+        'Creación de un gráfico de dispersion odómetro vs. precio')
 
     # crear un gráfico de dispersión
-    fig = px.scatter(car_data, x="odometer", y="price")
-    fig.show()  # crear gráfico de dispersión
-
+    scatter_fig = px.scatter(car_data, x="odometer",
+                             y="price", opacity=0.7, height=500)
+    st.plotly_chart(scatter_fig, use_container_width=True)
